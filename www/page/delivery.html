@@ -12,19 +12,19 @@
     href="/static/assert/fileuploader.less" 
     rel="stylesheet" 
     type="text/css" />
-    
+
   <script type="text/javascript" src="/static/lib/jquery_iframe_transport.js"></script>
   <script src="/static/lib/mod.js"></script>
-
 </head>
 <body>
-<input id="fileupload" type="file" name="files[]"/>
+<input id="fileupload" type="file" name="files"/>
 
   <script>
     require("/static/lib/jquery_iframe_transport.js");
     require("/static/lib/jquery_fileuploader.js");
 
     var $ = require("jquery");
+
     $('#fileupload').fileupload({
       autoUpload: true,
       url: '/uploader',
